@@ -1,8 +1,6 @@
 package digital.serverclub.mylibrary;
 
-import android.content.Context;
 import android.os.AsyncTask;
-import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,7 +26,7 @@ import java.net.URLEncoder;
      public  class Send_sms extends AsyncTask<String ,Void,String> {
         String msg="";
 
-        Context c;
+
         @Override
         protected String doInBackground(String... params) {
 
@@ -91,7 +89,6 @@ import java.net.URLEncoder;
                 //token
                 JSONObject jo = new JSONObject(result);
                 message = jo.getString("message");
-                Toast.makeText(c, ""+message, Toast.LENGTH_LONG).show();
             } catch (JSONException e) {
                 e.printStackTrace();
             }
