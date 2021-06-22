@@ -85,14 +85,12 @@ import java.net.URLEncoder;
         protected void onPostExecute(String result) {
 
 
-            Send_sms context;
             String message = null;
             try {
                 //token
-                context=this;
                 JSONObject jo = new JSONObject(result);
                 message = jo.getString("message");
-                ToasterMessage.s(context,message);
+                ToasterMessage.s(this,message);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
