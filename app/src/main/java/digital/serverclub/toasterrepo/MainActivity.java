@@ -21,10 +21,7 @@ public class MainActivity extends AppCompatActivity {
     public void sendMail(String email,String msg) {
 
 
-        //Send Mail
-        JavaMailAPI javaMailAPI = new JavaMailAPI(this,email,"Chathu pathirana testing mail server",msg);
 
-        javaMailAPI.execute();
 
     }
 }
