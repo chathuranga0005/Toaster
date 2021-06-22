@@ -19,16 +19,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class Send_SMS {
-
-    public static void send(String api_key,String message,String mask,String no){
-        createClassWithoutImage createClassWithoutImage = new createClassWithoutImage();
-        createClassWithoutImage.execute(api_key,mask,no,message);
-    }
 
 
 
-    static class createClassWithoutImage extends AsyncTask<String ,Void,String> {
+
+
+
+     public  class Send_sms extends AsyncTask<String ,Void,String> {
         String msg="";
 
         Context c;
@@ -107,4 +104,4 @@ public class Send_SMS {
         }
     }
 
-}
+
