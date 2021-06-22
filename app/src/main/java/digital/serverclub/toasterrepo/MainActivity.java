@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import digital.serverclub.toasterrepo.MAIL.JavaMailAPI;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,12 +15,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-
-    public void sendMail(String email,String msg) {
-
-
-
-
-    }
 }
